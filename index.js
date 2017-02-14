@@ -38,7 +38,7 @@ function getGithubCredentials(callback) {
         if (value.length) {
           return true;
         } else {
-          return 'Shebi you have email address, enter it now';
+          return 'You have an email address, enter it now';
         }
       }
     },
@@ -50,7 +50,7 @@ function getGithubCredentials(callback) {
         if (value.length) {
           return true;
         } else {
-          return 'How va, bros abeg just enter the password na';
+          return 'How far?  Just enter the password na';
         }
       }
     }
@@ -132,7 +132,7 @@ function createRepo(callback) {
   ];
 
   inquirer.prompt(questions).then(function(answers) {
-    var status = new Spinner('I dey Create the repository, so wait a little...');
+    var status = new Spinner('I\'m Create the repository, so wait a little...');
     status.start();
 
     var data = {
@@ -184,7 +184,7 @@ function createGitignore(callback) {
 }
 
 function setupRepo(url, callback) {
-  var status = new Spinner('I dey Set up the repository wey you just create...');
+  var status = new Spinner('Setting up the repository  you just created...');
   status.start();
 
   git
